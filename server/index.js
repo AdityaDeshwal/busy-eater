@@ -1,6 +1,7 @@
+require("dotenv").config();
 const express = require('express')
 const app = express()
-const port = 5000
+const port = process.env.PORT || 3000;
 
 const mongoDB=require("./db")
 mongoDB();
